@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">InternProject</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="api_key">9_MQmPkTC35c9Xl0QB2XTyUcshgj4O0HFIF-dD51ylY</string>
 </resources>

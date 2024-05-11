@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".activity.MainActivity"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
@@ -13,12 +13,22 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
         >
         <EditText
+            android:id="@+id/main_edSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Search here..."
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"/>
+            android:hint="Enter keyword"
+            android:background="@drawable/shape_custom_editext"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/baseline_search_24"
+            android:drawablePadding="10dp"
+            />
     </androidx.cardview.widget.CardView>
-
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_rcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 </LinearLayout>
