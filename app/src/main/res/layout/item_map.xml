@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="5dp"
+    android:id="@+id/item_ln">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_location_on_24"/>
+    <TextView
+        android:id="@+id/item_tvLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="location"
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+    <ImageView
+        android:id="@+id/item_imgGoMap"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/go_directions"
+        android:layout_margin="10dp"/>
+</LinearLayout>
